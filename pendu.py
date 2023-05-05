@@ -153,6 +153,11 @@ while tour <= 8 :
         print(potence[tour])
         print(f'Le mot est "{mot_cache}".\nIl reste {nbrTiret} lettres inconnues.\n')
         inpLettre = input("Entrez une lettre : ").upper()
+
+        while len(inpLettre) != 1:
+            print("Vous devez entrer une seule lettre !")
+            inpLettre = input("Entrez une lettre : ").upper()
+
     else :
         print(potence[8])
         print(defaite)  
